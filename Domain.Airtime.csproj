@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CSharpFunctionalExtensions" Version="2.4.1" />
+    <PackageReference Include="FluentValidation" Version="8.2.2" />
+    <PackageReference Include="MediatR" Version="8.0.1" />
+    <PackageReference Include="WindowsAzure.ServiceBus" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AzureServiceBusUtil\AzureServiceBusUtil.csproj" />
+    <ProjectReference Include="..\CommonComponents\CommonComponents.csproj" />
+    <ProjectReference Include="..\PaymentSharedKernels\PaymentSharedKernels.csproj" />
+    <ProjectReference Include="..\SharedKernel.Infrastructure\SharedKernel.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Utilities">
+      <HintPath>..\Utilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
